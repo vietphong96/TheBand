@@ -127,9 +127,12 @@
 }
 
 .send{
-    width: 320px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+   width: 100%;
 }
+.places_item {
+    width: auto;
+    float: left;
+}
+
 
 }
