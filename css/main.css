@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+#main {
+}
+/* header */
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    line-height: 46px;
+    display: inline-block;
+    height: 46px;
+}
+
+.nav_active{
+    display: block !important;
+}
+
+#nav > li {
+    display: inline-block;
+}
+/* sub nav */
+#nav li .subnav {
+    display: block;
+    list-style: none;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+}
+
+#nav li a:hover,
+.buy_tikets_btn:hover,
+.modal_pay:hover,
+.send:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    z-index: 1000;
+}
+
+#nav li .subnav a {
+    color: #333;
+    display: block;
+    font-weight: bold;
+}
+
+#header > .search_button {
+    float: right;
+    padding: 0px 17px;
+}
+
+#header > .search_button:hover {
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+}
+
+#header .search_icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+/* Slider */
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("../img/chicago.jpg") top center / cover no-repeat;
+    position: relative;
+    z-index: -1;
+}
+
+.silder_content {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* content */
+#content .content_section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .section_heading {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#content .section_sub_heading {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+#content .section_about {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member_list {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#content .member_item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .member_name {
+    font-size: 15px;
+}
+
+#content .member_img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 5px;
+}
+
+.tour_section {
+    width: 100%;
+    background-color: #000;
+}
+
+.text-white {
+    color: #fff !important;
+}
+/* Tour dates */
+.tickets_list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+    color: #757575;
+}
+
+.content_section li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quanlity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 30px;
+    margin-top: -3px;
+}
+/* places */
+.places_list {
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+.places_item {
+    width: 33.33333%;
+    float: left;
+}
+
+.places_list img {
+    width: 100%;
+    display: block;
+}
+
+.places_list img:hover {
+    opacity: 0.7;
+}
+
+.places_list .body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.places_list .name {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+.places_list .dates {
+    margin: 15px 0;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.places_list .dicri {
+    margin: 15px 0;
+    line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.buy_tikets_btn {
+    margin: 15px 0;
+    text-decoration: none;
+    color: #fff;
+    width: 108px;
+    height: 38px;
+    background-color: black;
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+/* footer */
+#footer {
+}
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal_container {
+    width: 900px;
+    min-height: 200px;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal_header {
+    background-color: #009688;
+    height: 110px;
+    align-items: center;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.icon_header {
+    margin-right: 16px;
+}
+.modal_close {
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    color: #fff;
+}
+
+.modal_close:hover {
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.modal_body {
+    padding: 10px;
+}
+
+.modal_label {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.modal_input {
+    margin-bottom: 12px;
+    padding: 8px;
+    width: 100%;
+}
+
+.buy_tikets_btn {
+    border: none;
+}
+
+.modal_pay {
+    width: 100%;
+    height: 45px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.modal_help {
+    float: right;
+    padding: 24px;
+}
+
+.help_a {
+    color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact {
+    display: flex;
+}
+
+.send {
+    float: right;
+    width: 80px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    margin: 16px auto;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-info {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.size-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+
+.contact-form {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+}
+
+.map {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.map_pic_img {
+    width: 100%;
+}
+
+#footer {
+    margin-top: 60px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+} 
+ 
+.footer_i {
+    font-size: 30px;
+    margin-right: 6px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer_i:hover{
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+
+.silogan {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    font-style: italic;
+    opacity: 0.8;
+    color: #333;
+}
+
